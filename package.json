@@ -1,0 +1,10 @@
+{
+  "name": "cabal-docker-poc",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cabal-core": "^6.0.0"
+  }
+}
