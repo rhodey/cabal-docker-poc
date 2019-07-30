@@ -14,7 +14,7 @@ $ docker run --rm -it poc
 > CTRL+C
 $ docker run --rm -it poc
 ```
-You may also be able to reproduce this outside of docker, try substituting the docker commands for `node index.js` in the same order.
+You may also be able to reproduce this outside of docker, try substituting the docker commands for `node index.js` in the same order. My host machine is running node `10.16.0` as well and cabal `7.1.5`.
 
 ### Error
 On my machine the second time I run the container and all times thereafter I get the output below. Note that this error is not coming from the `cabal.swarm()` callback.
