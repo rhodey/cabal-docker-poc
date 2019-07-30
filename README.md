@@ -16,7 +16,7 @@ $ docker run --rm -it poc
 ```
 
 ### Error
-On my machine the second time I run the container and all times thereafter I get the output below:
+On my machine the second time I run the container and all times thereafter I get the output below. Note that this error is not coming from the `cabal.swarm()` callback.
 ```
 swarm ok
 local key> 24027b0e34203ff10b6ba03bc4d7c7f98aeed6a8871c3aab6285a0eefbafa162
