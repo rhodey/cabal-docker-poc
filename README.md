@@ -1,5 +1,5 @@
 # cabal-docker-poc
-POC to reproduce cabal replication bug on Node LTS `10.16.0`. I do not understand why, but on one of my machines this bug can only be reproduced inside a docker container. While on the other machine I can reproduce it in and outside of docker. Note that this POC uses an official node docker image.
+POC to reproduce cabal replication bug on Node LTS `10.16.0` using official docker image.
 
 ## Build
 ```
