@@ -7,7 +7,7 @@ $ docker build -t poc .
 ```
 
 ## Run
-This error will only occur if you follow these steps exactly. First start (https://github.com/cabal-club/cabal-cli)[cabal-cli] in one bash session then in the next run the docker command one time, then exit it with `CTRL+C`, then run it once more.
+This error will only occur if you follow these steps exactly. First start [https://github.com/cabal-club/cabal-cli](cabal-cli) in one bash session then in the next run the docker command one time, then exit it with `CTRL+C`, then run it once more.
 ```
 $ cabal --temp cabal://6c3cc8b90a7fc9558de91fe47cbd23ed72917ade21da07d3ea4e689972bfc6a0
 $ docker run --rm -it poc
