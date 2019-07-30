@@ -1,5 +1,5 @@
 # cabal-docker-poc
-POC to reproduce cabal replication bug on Node LTS `10.16.0`. I do not understand why, but it is easier for me to reproduce this bug inside a docker container. I have only seen this bug once come from my laptop's node environment, however on docker I can reproduce it every time. Note that this POC uses an official node docker image.
+POC to reproduce cabal replication bug on Node LTS `10.16.0`. I do not understand why, but on one of my machines this bug can only be reproduced inside a docker container. While on the other machine I can reproduce it in and outside of docker. Note that this POC uses an official node docker image.
 
 ## Build
 ```
@@ -14,6 +14,7 @@ $ docker run --rm -it poc
 > CTRL+C
 $ docker run --rm -it poc
 ```
+You may also be able to reproduce this outside of docker, try substituting the docker commands for `node index.js` in the same order.
 
 ### Error
 On my machine the second time I run the container and all times thereafter I get the output below. Note that this error is not coming from the `cabal.swarm()` callback.

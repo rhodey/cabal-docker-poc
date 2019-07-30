@@ -1,7 +1,8 @@
 const Cabal = require('cabal-core')
 
 let key = '6c3cc8b90a7fc9558de91fe47cbd23ed72917ade21da07d3ea4e689972bfc6a0'
-let cabal = Cabal('.state', key)
+let rand = Math.floor((Math.random() * 100) + 1)
+let cabal = Cabal(`/tmp/cabal-${rand}`, key)
 
 cabal.swarm((err) => {
   if (err) {
